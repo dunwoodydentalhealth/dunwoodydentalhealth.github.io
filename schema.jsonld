@@ -1,0 +1,37 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dunwoody Dental Health",
+  "url": "https://dunwoodydentalhealth.github.io",
+  "logo": "https://dunwoodydentalhealth.github.io/Dunwoody%20Dental%20Health%20Logo.jpg",
+  "description": "Dunwoody Dental Health is a trusted dental practice dedicated to helping patients achieve healthy, confident smiles through personalized and compassionate care.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dunwoody",
+    "addressRegion": "GA",
+    "addressCountry": "US"
+  },
+  "telephone": "+1-XXX-XXX-XXXX",
+  "openingHours": [
+    "Mo-Fr 08:00-18:00",
+    "Sa 09:00-14:00"
+  ],
+  "priceRange": "$$",
+  "acceptsNewPatients": true,
+  "medicalSpecialty": [
+    "Dentistry",
+    "Cosmetic Dentistry",
+    "Orthodontics",
+    "Periodontics"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/DunwoodyDentalHealth/",
+    "https://www.instagram.com/dunwoodydentalhealth/?hl=en",
+    "https://x.com/Dunwoody_dds",
+    "https://www.youtube.com/@DunwoodyDentalHealth",
+    "https://www.tiktok.com/@dunwoodydentalhealth",
+    "https://github.com/dunwoodydentalhealth",
+    "https://linktr.ee/dunwoodydentalhealth",
+    "https://www.crunchbase.com/organization/dunwoody-dental-health"
+  ]
+}
