@@ -86,27 +86,43 @@ main {
     padding: 2rem;
 }
 
-/* Hero Section */
+/* Hero section with logo */
 .hero {
     background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
     color: white;
-    padding: 4rem 2rem;
-    text-align: center;
+    padding: 3rem 2rem;
     border-radius: 10px;
     margin-bottom: 3rem;
 }
 
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-logo {
+    width: 180px;
+    max-width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    border: none;      /* home page heading ke neeche line nahi aayegi */
+    color: white;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
 }
 
 .cta-button {
@@ -126,7 +142,7 @@ main {
     color: #004499;
 }
 
-/* Page Header */
+/* Page Header (other pages) */
 .page-header {
     background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
     color: white;
@@ -139,6 +155,7 @@ main {
 .page-header h2 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    border: none;
 }
 
 .page-header p {
@@ -165,7 +182,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-/* About Preview */
+/* About Preview (on home) */
 .about-preview {
     background: white;
     padding: 2rem;
@@ -208,7 +225,7 @@ h3 {
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
-/* Features Grid */
+/* Features Grid (Why Choose Us) */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -231,14 +248,16 @@ h3 {
     margin-bottom: 3rem;
 }
 
-.mission, .vision {
+.mission,
+.vision {
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.mission h2, .vision h2 {
+.mission h2,
+.vision h2 {
     font-size: 1.8rem;
 }
 
@@ -290,7 +309,7 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-/* Podcast */
+/* Podcast page */
 .podcast-info {
     background: white;
     padding: 2rem;
@@ -348,7 +367,7 @@ h3 {
     color: white;
 }
 
-/* Contact */
+/* Contact page */
 .contact-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -536,14 +555,6 @@ footer {
         font-size: 0.9rem;
     }
 
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
     main {
         padding: 1rem;
     }
@@ -558,6 +569,24 @@ footer {
 
     .footer-content {
         grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-logo {
+        width: 140px;
+        margin: 0 auto;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 }
 
@@ -574,14 +603,6 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 0.5rem;
-    }
-
-    .hero {
-        padding: 2rem 1rem;
-    }
-
-    .hero h2 {
-        font-size: 1.6rem;
     }
 
     .services-grid,
